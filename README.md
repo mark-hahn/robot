@@ -1,6 +1,6 @@
 # robot
 
-**Generate css from coffeescript with namespace and nested class names**
+**home robot project, useless for anyone but me**
 
 ### License
 

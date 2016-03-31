@@ -1,8 +1,8 @@
 {
   "name": "robot",
   "version": "3.0.1",
-  "description": "Generate css from coffeescript with namespace and nested class names",
-  "main": "lib/index.js",
+  "description": "home robot project, useless for anyone but me",
+  "main": "lib/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mark-hahn/robot.git"
@@ -14,6 +14,11 @@
   },
   "homepage": "https://github.com/mark-hahn/robot#readme",
   "dependencies": {
-    "fs-plus": "^2.8.1"
+    "fs-plus": "^2.8.1",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0",
+    "node-static": "^0.7.7",
+    "sse-channel": "^2.0.2",
+    "teacup": "^2.0.0"
   }
 }

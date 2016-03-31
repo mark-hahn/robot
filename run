@@ -1,0 +1,9 @@
+#   -*-  grammar-ext: sh  -*-
+
+echo "Running Robot"
+pkill -f /root/dev/apps/robot/js/server.js > /dev/null 2>&1
+killall tail   > /dev/null 2>&1
+tail -fn 0 ~/logs/robot.log &
+set -e
+coffee -co js server/*.coffee
+nohup node /root/dev/apps/robot/js/server.js >> ~/logs/robot.log 2>&1 &
